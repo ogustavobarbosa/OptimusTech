@@ -1,0 +1,35 @@
+@import url('/src/css/depoimentos.css');
+@import url('/src/css/formulario.css');
+@import url('/src/css/rodape.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-texto-secundario);
+}
+
+:root{
+    --cor-de-fundo: #FFFFFF;
+    --cor-texto-secundario: #667085;
+    --cor-texto-principal: #101828;
+    --cor-principal:#8E2424;
+    --cinza: #EAECF0;
+    --cinza40: #98A2B3;
+    --cor-principal30: #C3191908;
+    --cor-form: #F9FAFB;
+    --cor-de-borda: #D0D5DD;
+
+    --sombra: 0 1px 2px #1018280D;
+    --fonte-principal: 'Inter', sans-serif;
+}
+body{
+    font-family: var(--fonte-principal);
+    width: 100vw;
+    overflow-x: hidden;
+
+}

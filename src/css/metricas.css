@@ -1,0 +1,56 @@
+.metricas {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    justify-content: center;
+    margin-bottom: 12.25rem;
+}
+
+.metrica__item {
+    width: 20%;
+}
+
+.metrica__numero {
+    font-size: 3.75rem;
+    color: var(--cor-principal);
+    line-height: 3.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.metrica__titulo {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.metrica__texto {
+    color: var(--cor-texto-secundario);
+    line-height: 1.5rem;
+}
+@media screen  and (max-width:1200px) {
+    .metricas{
+        gap: 2rem;
+        margin-bottom: 0;
+
+    }
+    .metrica__item {
+        width: 40%;
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .metrica__item {
+        width: 100%;
+        text-align: center;
+       
+    }
+    .metricas{
+        row-gap: 2rem;
+        margin-bottom: 0;
+
+    }
+
+}

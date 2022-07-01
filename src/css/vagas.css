@@ -1,0 +1,125 @@
+.vagas {
+    padding: 0 7rem;
+    width: 100vw;
+    
+}
+.vagas .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+.vagas .container::after {
+    margin: 2rem 0;
+    content: "";
+    background: url(/src/img/Image.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 100%;
+    min-height: 400px;
+}
+.vagas__tag {
+    background-color: #8e24240d;
+    color: var(--cor-principal);
+    border-radius: 16px;
+    padding: 0.25rem 0.75rem;
+    display: inline-block;
+    margin-bottom: 1.25rem;
+}
+
+.vagas__titulo {
+    font-size: 2.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.vagas__texto {
+    font-size: 1.25rem;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 4rem;
+}
+
+
+/* Cards Anúcio de Vagas*/
+.vagas-anuncio {
+    padding: 0 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vagas__categorias {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--cor-texto-principal);
+    margin: 4rem 0 2rem;
+}
+
+.vagas-box {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1.5rem
+}
+
+.vagas-card {
+    border: 1px solid var(--cinza);
+    border-radius: 16px;
+    background-color: var(--cor-de-fundo);
+    padding: 1.5rem 1.5rem 1.625rem;
+
+    display: inline-block;
+}
+
+.vagas-card__titulo {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--cor-texto-principal);
+}
+
+.vagas-card__body {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--cor-texto-secundario);
+}
+@media screen and (max-width: 1200px) {
+    .vagas {
+        padding: 0;
+    }
+    .vagas__texto {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .vagas .container::after{
+        min-height: 260px;
+     
+        justify-self: flex-start;
+    }
+    .vagas .container{
+        padding: 2rem 3rem 0;
+    }
+    .vagas-anuncio{
+        padding: 0 2rem;
+    }
+    .vagas-box{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+    .vagas .container::after{
+        min-height: 200px;
+        width: 100vw;
+    }
+    .vagas__texto {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .vagas-box{
+        width: 100%;
+    }
+}

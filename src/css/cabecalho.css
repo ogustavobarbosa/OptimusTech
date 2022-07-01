@@ -1,0 +1,154 @@
+
+
+.cabecalho{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    padding: 0 7rem;
+    column-gap: 3rem;
+}
+.cabecalho .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.cabecalho__logo{
+    width: 148px;
+}
+
+.paginas__lista{
+    display: flex;
+    list-style: none;
+    column-gap: 2rem;
+}
+.paginas__item{
+    color: var(--cor-texto-secundario);
+    font-size: 1rem;   
+}
+.paginas__link{
+    display: block;
+    color: inherit;
+    font-size: inherit;
+    padding: .75rem 1rem;
+}
+.btn-menu{
+    display: none;
+}
+.btn{
+    padding: .625rem 1.125rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.btn-principal{
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-principal);
+    border: 1px solid transparent;   
+    transition: .2s; 
+}
+.btn-transparent{
+    background-color: transparent;
+    color: var(--cor-texto-secundario)
+}
+.btn-principal:hover{
+    border: 1px solid var(--cor-principal);
+    background-color: transparent;
+    color: var(--cor-principal);
+}
+#menu-input{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .cabecalho{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        padding: 0 2rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .08)
+
+    }
+    .cabecalho__logo--link{
+        justify-self: flex-center;
+        flex-grow: 1;
+        display: block;
+        text-align: center;
+        display: flex;
+       
+    }
+
+    .cabecalho .container{
+        padding: 0;
+        flex-grow: 1;
+
+    }
+    .cabecalho__cadastro{
+        flex-direction: row;
+    }
+    .paginas__link{
+        word-wrap: break-word;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .disable-scroll{
+        overflow-y: hidden;
+    }
+
+    .btn-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        height: 80px;
+    }    
+    .cabecalho .container{
+        display:  flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 0;
+        position: absolute;
+        top: 100%;
+        left: 0; 
+        margin-left: -100vw;
+        transition: .25s;
+        background-color: rgb(31, 27, 27);
+        height: calc(100vh - 80px);
+        width: 100vw;
+    
+    }
+    #menu-input:checked ~ #menu{      
+        margin-left: 0;
+        overflow-y: none;
+
+    }
+    .cabecalho__navegacao{
+        width: 100%;
+        margin-left: 0;
+    }
+    .paginas__lista{
+        flex-direction: column;
+    }
+    .cabecalho__cadastro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .paginas__link{
+        font-size: 1.2rem;
+    }
+    .btn{
+        font-size: 1.2rem;
+    }
+
+        
+}
+
