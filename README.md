@@ -4,15 +4,29 @@ Projeto front-end responsivo
 
 > Desktop Tablet e Celular
 
-![preview desktop](./prints/desktop.png)
+<br>
 
+### 🖥️ Versão desktop
+<p align="center">
+<img src="./prints/desktop.png" width="500" style="text-align:center">
+</p>
 
-![preview tablet](./prints/tablet.png)
+### 📔 Versão Tablet:
 
+<p align="center">
+<img src="./prints/tablet.png" width="400" style="text-align:center">
+</p>
 
-![preview menu lateral](./prints/mobile.png)
+### 📱 Versão Mobile:
+<p align="center">
+<img src="./prints/mobile.png" width="300" style="text-align:center">
+</p>
 
-![preview menu lateral](./prints/menu-lateral.png)
+### Menu Lateral
+<p align="center">
+<img src="./prints/menu-lateral.png" width="300" style="text-align:center">
+</p>
+
 
 
 
