@@ -2,9 +2,19 @@
 
 Projeto front-end responsivo
 
-> Celular, Tablet e desktop
+> Desktop Tablet e Celular
 
-![test](../../../../Gustavo/Desktop/prompt.png)
+![preview desktop](./prints/desktop.png)
+
+
+![preview tablet](./prints/tablet.png)
+
+
+![preview menu lateral](./prints/mobile.png)
+
+![preview menu lateral](./prints/menu-lateral.png)
+
+
 
 ### 📦 Deploy na Vercel
 
